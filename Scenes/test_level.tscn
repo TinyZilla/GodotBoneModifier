@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwpq7cr1rc6ah"]
+
+[ext_resource type="PackedScene" uid="uid://ceys6nb5gofi5" path="res://Prefabs/CameraRig/CameraRig.tscn" id="2_0qjsi"]
+[ext_resource type="PackedScene" uid="uid://flqjsyfg4q8f" path="res://Prefabs/gslinger.tscn" id="2_sufae"]
+
+[node name="TestLevel" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.799926, 0.600099, 0, -0.600099, 0.799926, 0, 3.11107, 2.2929)
+
+[node name="CameraRig" parent="." instance=ExtResource("2_0qjsi")]
+
+[node name="glsinger" parent="." instance=ExtResource("2_sufae")]
